@@ -1,3 +1,4 @@
+import InfoBar from "@/components/info-bar";
 import SideBar from "@/components/sidebar";
 
 type Props = {
@@ -8,7 +9,10 @@ function Layout({ children }: Props) {
   return (
     <div className="flex overflow-hidden h-screen">
       <SideBar />
-      <div className="w-full">{children}</div>
+      <div className="w-full">
+        <InfoBar />
+        {children}
+      </div>
     </div>
   );
 }
