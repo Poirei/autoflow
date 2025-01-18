@@ -1,3 +1,7 @@
 {
-  "unstable": ["unsafe-proto"]
+  "unstable": ["unsafe-proto"],
+  "imports": {
+    "#prisma/client": "./prisma/client.ts"
+  },
+  "nodeModulesDir": "auto"
 }
